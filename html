@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hi My Name Is | Exclusive Fan Community Pass</title>
+  <style>
+    :root {
+      --bg-dark: #0f1115;
+      --card-bg: #181b22;
+      --card-border: #2a2f3a;
+      --accent: #ff4757;
+      --accent-hover: #e84118;
+      --text-main: #f1f2f6;
+      --text-muted: #a4b0be;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 71, 87, 0.15);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 35px;
+      max-width: 520px;
+      margin: 0 auto 50px auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .price-tag {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 15px;
+    }
+
+    .price-tag span {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: normal;
+    }
+
+    ul.perks {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    ul.perks li {
+      margin-bottom: 14px;
+      display: flex;
+      align-items: flex-start;
+      font-size: 0.95rem;
+    }
+
+    ul.perks li svg {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      fill: var(--accent);
+      margin-top: 3px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    footer {
+      background: #090a0d;
+      border-top: 1px solid var(--card-border);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .disclaimer {
+      font-size: 0.75rem;
+      max-width: 600px;
+      margin: 10px auto 0 auto;
+      opacity: 0.7;
+    }
+
+    /* Policy Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-content {
+      background: var(--card-bg);
+      margin: 8% auto;
+      padding: 25px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      border: 1px solid var(--card-border);
+      max-height: 75vh;
+      overflow-y: auto;
+      color: var(--text-main);
+    }
+
+    .close-btn {
+      float: right;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .close-btn:hover {
+      color: #fff;
+    }
+
+    .modal-content h2 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .modal-content p, .modal-content li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <span class="badge">Official Digital Community</span>
+      <h1>Hi My Name Is</h1>
+      <p class="subtitle">Join our dedicated fan community for high-resolution video drops, rare digital edits, private discussion forums, and insider badges.</p>
+    </header>
+
+    <div class="pricing-card">
+      <div class="price-tag">
+        $10.50 <span>/ month (or ₹869/mo)</span>
+      </div>
+
+      <ul class="perks">
+        <li>
+          <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707l-4.5 4.5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L9 10.586l3.793-3.793a1 1 0 011.414 1.414z"/></svg>
+          <strong>Private Subscriber Group:</strong> Direct entry into our community hub to discuss hip-hop culture, news, and releases.
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707l-4.5 4.5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L9 10.586l3.793-3.793a1 1 0 011.414 1.414z"/></svg>
+          <strong>Exclusive Content Archive:</strong> Uncompressed media edits, documentary-style clips, and community-only polls.
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707l-4.5 4.5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L9 10.586l3.793-3.793a1 1 0 011.414 1.414z"/></svg>
+          <strong>Custom Subscriber Assets:</strong> Access to exclusive digital stickers, profile badges, and priority comment status.
+        </li>
+        <li>
+          <svg viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707l-4.5 4.5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L9 10.586l3.793-3.793a1 1 0 011.414 1.414z"/></svg>
+          <strong>Premier Merchandise Discounts:</strong> Early-bird coupon codes for all future fan drops and accessories.
+        </li>
+      </ul>
+
+      <a href="#" class="cta-btn">Join Subscription Pass</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a onclick="openModal('terms')">Terms & Conditions</a>
+      <a onclick="openModal('privacy')">Privacy Policy</a>
+      <a onclick="openModal('refund')">Refund & Cancellation</a>
+      <a onclick="openModal('contact')">Contact Us</a>
+    </div>
+    <p>&copy; 2026 Hi My Name Is Media. All rights reserved.</p>
+    <p class="disclaimer">Disclaimer: This is an independent fan-curated media platform. It is not affiliated with, endorsed by, or sponsored by any recording label or artist.</p>
+  </footer>
+
+  <div id="terms" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('terms')">&times;</span>
+      <h2>Terms & Conditions</h2>
+      <p>Welcome to "Hi My Name Is". By purchasing a recurring subscription pass, you gain access to digital creative media, private community channels, and curated commentary.</p>
+      <p>1. Memberships are recurring and billed monthly on the date of signup.</p>
+      <p>2. Content provided is strictly for personal, non-commercial entertainment purposes.</p>
+      <p>3. Abusive conduct in community groups will result in immediate revocation of access without refund.</p>
+    </div>
+  </div>
+
+  <div id="privacy" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('privacy')">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>We respect your privacy and handle data securely:</p>
+      <p>1. We collect your name and email address exclusively to manage membership credentials and transmit community access links.</p>
+      <p>2. Payment card details are securely handled by our payment processor (Razorpay) and are never stored on our servers.</p>
+      <p>3. We do not sell or rent subscriber contact details to any external third parties.</p>
+    </div>
+  </div>
+
+  <div id="refund" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('refund')">&times;</span>
+      <h2>Refund & Cancellation Policy</h2>
+      <p>1. <strong>Cancellation:</strong> You may cancel your recurring subscription at any time. Your access will remain active until the end of the current billing cycle.</p>
+      <p>2. <strong>Refunds:</strong> Because digital assets, multimedia drops, and exclusive community feeds are made accessible immediately upon checkout, payments are non-refundable once billed.</p>
+      <p>3. For billing disputes or technical access issues, please write to our support email within 48 hours of charge.</p>
+    </div>
+  </div>
+
+  <div id="contact" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('contact')">&times;</span>
+      <h2>Contact Us</h2>
+      <p>For support, billing inquiries, or membership access assistance, contact:</p>
+      <p><strong>Brand / Business Name:</strong> Hi My Name Is Media</p>
+      <p><strong>Email:</strong> contact@theujjwal.in</p>
+      <p><strong>Operating Address:</strong> Lucknow, Uttar Pradesh, India - 226001</p>
+      <p><strong>Response Time:</strong> Typically within 24 to 48 hours.</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
